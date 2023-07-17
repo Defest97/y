@@ -1,0 +1,15 @@
+<ol>
+  <li *ngFor="let book of books">
+    Name:{{book.name}} , Author:{{book.author}},
+    <span *ngIf="book.img!==''; else NoData">
+      <img src="../../assets/{{book.img}}" alt="">
+    </span>
+    ,
+    <span *ngIf="book.raiting!==0;else NoData">
+      raiting:{{book.raiting}}
+    </span>
+    <ng-template #NoData>
+      No data
+    </ng-template>
+  </li>
+</ol>
