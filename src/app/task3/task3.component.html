@@ -1,0 +1,16 @@
+<input type="text" (input)="onInput()" [(ngModel)]="filterText">
+<button>dasdsa</button>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of filterProducts">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+    </tr>
+  </tbody>
+</table>

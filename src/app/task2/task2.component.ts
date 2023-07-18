@@ -24,4 +24,5 @@ export class Task2Component {
     }
     
   }
+  
 }
